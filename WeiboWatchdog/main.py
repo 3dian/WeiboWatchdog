@@ -12,7 +12,7 @@ from const import *
 from engine import SpiderEngine
 from util import bark_call
 
-myBot = Bot(cookies=config.cookies, is_debug=config.is_debug)
+myBot = Bot(cookies=config.cookies, is_debug=True)
 wd = SpiderEngine(loggerName="MainLoop")
 
 
@@ -35,7 +35,7 @@ async def on_chat(chat: Chat):
                 args = cmd_list[1:]
             wd.logger.info(f"收到 命令:{cmd}，参数：{args}")
             if cmd in corpus.cmd_func:
-                await corpus.cmd_func[cmd](myBot, msg, *args)
+                await corpus.cmd_func[cmd](myBot, wd, msg, *args)
             elif cmd == "/reload":
                 try:
                     importlib.reload(sys.modules.get(args[0]))
@@ -74,6 +74,8 @@ async def on_new_weibo(weibo: Weibo):
             target_weibo = weibo.original_weibo
         else:
             target_weibo = weibo
+        if not myBot.is_weibo_read(target_weibo.weibo_id()):
+            myBot.mark_weibo(target_weibo.weibo_id())
         if myBot.is_weibo_repost(target_weibo.weibo_id()) is True:
             wd.logger.info(f"已经处理过微博 {target_weibo.detail_url()}")
             return
