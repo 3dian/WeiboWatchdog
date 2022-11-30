@@ -1,0 +1,38 @@
+2022-11-30 19:40:19,972 - INFO - engine[check_config][:43] - 未开启bark告警功能
+2022-11-30 19:40:19,973 - INFO - engine[check_config][:47] - 开启转发功能
+2022-11-30 19:40:19,973 - INFO - engine[check_config][:53] - 未开启上传功能
+2022-11-30 19:40:22,331 - INFO - engine[is_process][:176] - 微博 图片数量小于3张,不继续处理
+2022-11-30 19:40:22,428 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:22,517 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:22,713 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:22,795 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:22,887 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:22,948 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:23,053 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:23,122 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:30,615 - INFO - engine[is_process][:176] - 微博 图片数量小于3张,不继续处理
+2022-11-30 19:40:37,557 - INFO - engine[is_process][:176] - 微博 图片数量小于3张,不继续处理
+2022-11-30 19:40:37,628 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:46,112 - INFO - engine[is_process][:176] - 微博 图片数量小于3张,不继续处理
+2022-11-30 19:40:46,271 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:46,363 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:46,468 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:46,543 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:46,648 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:46,789 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:40:46,860 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:45:41,221 - INFO - engine[is_process][:189] - 非原创微博,不继续处理
+2022-11-30 19:46:20,830 - INFO - engine[detection][:163] - 微博 https://m.weibo.cn/detail/4841591288376471 检测到人体 1
+2022-11-30 19:46:20,830 - INFO - engine[on_new_weibo][:80] - 开始处理微博 https://m.weibo.cn/detail/4841591288376471
+2022-11-30 19:46:24,504 - ERROR - engine[dump_post][:84] - https://m.weibo.cn/detail/4841591288376471 webdriver错误 
+Message: unknown command: session/08ed8c96e4e55e412cfd27822c7c0c1d/element/0.182504134163876-1/screenshot
+
+2022-11-30 19:46:24,824 - INFO - engine[dump_post][:133] - 保存微博图片1成功
+2022-11-30 19:46:25,145 - INFO - engine[dump_post][:133] - 保存微博图片2成功
+2022-11-30 19:46:25,574 - INFO - engine[dump_post][:133] - 保存微博图片3成功
+2022-11-30 19:46:25,812 - INFO - engine[dump_post][:133] - 保存微博图片4成功
+2022-11-30 19:46:25,812 - INFO - engine[dump_post][:135] - 保存微博内容成功
+2022-11-30 19:46:25,812 - INFO - engine[dump_post][:137] - 图片最大size为0.215281mb 小于0.4mb
+2022-11-30 19:46:25,820 - INFO - engine[on_new_weibo][:83] - 图片/视频太小
+2022-11-30 19:46:25,821 - INFO - engine[on_new_weibo][:84] - 结束处理微博 https://m.weibo.cn/detail/4841591288376471
+2022-11-30 19:48:41,007 - INFO - engine[is_process][:176] - 微博 图片数量小于3张,不继续处理
